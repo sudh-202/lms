@@ -61,11 +61,11 @@ const formSchema = z.object({
                 )}
               />
               <Link href={'/teacher/courses'}>
-                <Button type='button' variant='ghost'>
+                <Button type='button' >
                   Cancel
                 </Button>
               </Link>
-              <Button type='submit' disabled={!isValid || isSubmitting}>
+              <Button type='submit' variant='black' disabled={!isValid || isSubmitting}>
                 Continue
               </Button>
             </form>
